@@ -99,11 +99,11 @@ Built a Production‑Ready Android Auth Module (Clean Architecture + MVVM/MVI + 
 
 Login
 
-![Login](docs/images/login.png)
+<img src="docs/images/login.png" width="320" />
 
 Register
 
-![Register](docs/images/register.png)
+<img src="docs/images/register.png" width="320" />
 
 **Usage (Host App)**
 Add the module and include the navigation graph (recommended):
