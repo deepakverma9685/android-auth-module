@@ -94,16 +94,29 @@ Built a Production‑Ready Android Auth Module (Clean Architecture + MVVM/MVI + 
 - `auth/build/reports/jacoco/jacocoTestReport/html/index.html`
 - `auth/build/reports/coverage/androidTest/debug/connected/index.html`
 
+
+**Screenshots**
+
+Login
+
+![Login](docs/images/login.png)
+
+Register
+
+![Register](docs/images/register.png)
+
 **Usage (Host App)**
-Add the module and call the flow:
+Add the module and include the navigation graph (recommended):
 
 ```kotlin
-AuthFlow(
+AuthNavGraph(
+    navController = navController,
     onAuthSuccess = { userId -> /* handle success */ },
     onPasswordResetSent = { /* handle reset */ },
     onGoogleLogin = { /* integrate Google SDK later */ },
     onFacebookLogin = { /* integrate Facebook SDK later */ }
 )
 ```
+
 
 If you want publishing, SDK integrations, or theme customization, this module is ready to extend.
